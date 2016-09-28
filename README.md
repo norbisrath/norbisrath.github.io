@@ -1,2 +1,2 @@
 # norbisrath.github.io
-THe website of the norbisraths
+The website of the norbisraths in Germany and also abroad
