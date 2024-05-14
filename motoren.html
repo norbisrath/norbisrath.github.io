@@ -21,6 +21,12 @@
             background-image: url('images/legohg.jpg');
             background-repeat: repeat;
         }
+        .überschrift-zelle {
+            text-align: center; /* Zentriert den Text horizontal */
+            font-size: 24px; /* Größere Schriftgröße */
+            margin-top: 0; /* Entfernt oberen Abstand, falls gewünscht */
+            margin-bottom: 0; /* Entfernt unteren Abstand, falls gewünscht */
+        }
         /* Responsivität hinzufügen */
         @media (max-width: 768px) {
             .container {
@@ -37,6 +43,7 @@
 </head>
 <body>
     <h1>Lego Motoren</h1>
+
         <div class="container">
         <!-- Erste Zeile -->
         <div class="cell gekachelter-hintergrund-zelle">
@@ -75,17 +82,18 @@
         <!-- Dritte Zeile -->
          <div class="cell">
             <!-- 3.1 -->
-            Die Verbindung zum esp8266 stellen wir dann mit einem "Motor-Shield" L298N her. Gibt es in zahlreichne Varianten, einfach nach L298N,  Motortreiber oder motor-shield suchen. <img src="images/motorshield.jpg" alt="Motorshield L298N" style="display: block; margin-left: auto; margin-right: auto;">
+            Die Verbindung zum esp8266 stellen wir dann mit einem "Motor-Shield" L298N her. Gibt es in zahlreichne Varianten, einfach nach L298N,  Motortreiber oder motor-shield suchen. <br><br><img src="images/motorshield.jpg" alt="Motorshield L298N" style="display: block; margin-left: auto; margin-right: auto;">
         </div>
+
         <div class="cell">
              <!-- 3.2 -->
-            Verdrahtung --- L298n - esp8266 <br>
-            Vom Esp8266 bekommen wir für die Motorsteuerung PWM-Signale, das sind Signale, mit denen man die Geschwindigkeit des Motors regeln kann. Außerdem kann die Drehrichtung (links/rechts) eingestellt werden. Mit dem L298N kann man 2 Motoren steuern.
+             <h3 class="überschrift-zelle">Verdrahtung L298N <---> esp8266</h3><br>
+            Vom esp8266 bekommen wir für die Motorsteuerung PWM-Signale, das sind Signale, mit denen man die Geschwindigkeit des Motors regeln kann. Außerdem kann die Drehrichtung (links/rechts) eingestellt werden. Mit dem L298N kann man 2 Motoren steuern:<br>Anschlüsse: <br> + an 9V (Die Motorspannung) <br> - an - bzw. GND (am besten mit GND vom esp8266 verbinden)<br>IN1 - IN4 mit den zugehörigen Anschlüssen auf dem esp verbinden (wie im Beispiel -->>). Motor-A, Motor-B an die passenden Anschlüsse des jeweiligen Motors.
         </div>
         <div class="cell">
              <!-- 3.3 -->
-            Hier dann noch die Konfiguration für die Motoren für das setup.cpp <br>
-            <img src="images/config_motor.png" alt="Konfiguration Motor" style="display: block; margin-left: auto; margin-right: auto;"> <br> Wie man sehen kann Motor A Geschwindigkeit (0-1023) an D6, Richtung (links/rechts) an D7, anlog Motor B D0 und D5. Verbinden mit IN1, IN2 für Motor A und IN3, IN$ für Motor B.
+            Hier dann noch die Konfiguration für die Motoren für das setup.cpp <br><br>
+            <img src="images/config_motor.png" alt="Konfiguration Motor" style="display: block; margin-left: auto; margin-right: auto;"> <br> Wie man sehen kann: <br> Motor A Geschwindigkeit (0-1023) an D6, Richtung (links/rechts) an D7, <br> Motor B an D0 und D5. <br>Verbinden mit IN1, IN2 für Motor A und IN3, IN4 für Motor B.
         </div>
 
     </div>

@@ -17,6 +17,28 @@
             text-align: center;
             width: 100%;
         }
+           .gekachelter-hintergrund-zelle {
+            background-image: url('images/legohg.jpg');
+            background-repeat: repeat;
+        }
+        .überschrift-zelle {
+            text-align: center; /* Zentriert den Text horizontal */
+            font-size: 24px; /* Größere Schriftgröße */
+            margin-top: 0; /* Entfernt oberen Abstand, falls gewünscht */
+            margin-bottom: 0; /* Entfernt unteren Abstand, falls gewünscht */
+        }
+        /* Responsivität hinzufügen */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Eine Spalte */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* Eine Spalte */
+            }
+        }
     </style>
 </head>
 <body>
