@@ -18,7 +18,7 @@
             width: 100%;
         }
         .gekachelter-hintergrund-zelle {
-            background-image: url('images/legohg.jpg');
+            background-image: url('images/bilder_motoren/legohg.jpg');
             background-repeat: repeat;
         }
         .überschrift-zelle {
@@ -54,14 +54,17 @@
             <!-- leere Zelle 1.2 -->
         </div>
         <div class="cell gekachelter-hintergrund-zelle">
-            <!-- 1.3 -->
+             <!-- 1.3 -->
+             <a href="http://norbisrath.de/beleuchtung.html">Beleuchtung mit LEDs </a><br>
+            Beleuchtung mit LED-Strips <br>
+            <a href="http://norbisrath.de/automation.html">Automatisierung </a><br>
         </div>
 
 
         <!-- Zweite Zeile -->
         <div class="cell">
             <!-- 2.1 -->
-            Lego Motoren sind schon ein ganz besonderes Kapitel. Die Vielfalt ist nahezu unüberschaubar. Es gibt eine ganz hervorragende Seite, die Übersicht verschafft!  <a href="https://www.philohome.com/motors/motorcomp.htm">Lego Motoren.  </a> Der Autor (danke Philo!) listet die Motoren übersichtlich auf, dazu gibt es zahlreiche technische Details. <br>
+            Lego Motoren sind schon ein ganz besonderes Kapitel. Die Vielfalt ist nahezu unüberschaubar. Es gibt eine ganz hervorragende Seite, die Übersicht verschafft!  <a href="https://www.philohome.com/motors/motorcomp.htm"> Lego Motoren.  </a> Der Autor (danke Philo!) listet die Motoren übersichtlich auf, dazu gibt es zahlreiche technische Details. <br>
             ... und hier gibt es sogar eine deutsche Übersetzung dazu:<br> <a href="https://coolbricks.com/motoren/"> Lego Motoren (auf deutsch) </a>
 
 
@@ -69,7 +72,7 @@
         <div class="cell">
             <!-- 2.2 -->
             Ich verwende im Moment (für Leuchtturm, Achterbahn und Karussell) den "einfachen mittleren Linearmotor" (45303) mit dem LPF2 Anschluss. <br>
-            <img src="images/Lego_motor.jpeg" alt="Linearmotor" style="display: block; margin-left: auto; margin-right: auto;"> <br>
+            <img src="images/bilder_motoren/lego_motor.jpeg" alt="Linearmotor" style="display: block; margin-left: auto; margin-right: auto;"> <br>
             Die meisten Motoren - dieser auch - benötigen eine Spannung von 9 V. Die Spannungsversorgung ist meist unkritisch, nach oben hin sollte man vielleicht etwas vorsichtig sein, nach unten (5-6V) meist gar kein Problem.
         </div>
         <div class="cell">
@@ -82,7 +85,7 @@
         <!-- Dritte Zeile -->
          <div class="cell">
             <!-- 3.1 -->
-            Die Verbindung zum esp8266 stellen wir dann mit einem "Motor-Shield" L298N her. Gibt es in zahlreichne Varianten, einfach nach L298N,  Motortreiber oder motor-shield suchen. <br><br><img src="images/motorshield.jpg" alt="Motorshield L298N" style="display: block; margin-left: auto; margin-right: auto;">
+            Die Verbindung zum esp8266 stellen wir dann mit einem "Motor-Shield" L298N her. Gibt es in zahlreichne Varianten, einfach nach L298N,  Motortreiber oder motor-shield suchen. <br><br><img src="images/bilder_motoren/motorshield.jpg" alt="Motorshield L298N" style="display: block; margin-left: auto; margin-right: auto;">
         </div>
 
         <div class="cell">
@@ -93,7 +96,7 @@
         <div class="cell">
              <!-- 3.3 -->
             Hier dann noch die Konfiguration für die Motoren für das setup.cpp <br><br>
-            <img src="images/config_motor.png" alt="Konfiguration Motor" style="display: block; margin-left: auto; margin-right: auto;"> <br> Wie man sehen kann: <br> Motor A Geschwindigkeit (0-1023) an D6, Richtung (links/rechts) an D7, <br> Motor B an D0 und D5. <br>Verbinden mit IN1, IN2 für Motor A und IN3, IN4 für Motor B.
+            <img src="images/bilder_motoren/config_motor.png" alt="Konfiguration Motor" style="display: block; margin-left: auto; margin-right: auto;"> <br> Wie man sehen kann: <br> Motor A Geschwindigkeit (0-1023) an D6, Richtung (links/rechts) an D7, <br> Motor B an D0 und D5. <br>Verbinden mit IN1, IN2 für Motor A und IN3, IN4 für Motor B.
         </div>
 
     </div>
