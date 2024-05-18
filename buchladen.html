@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buchladen</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Drei Spalten */
+            gap: 20px;
+        }
+        .cell {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9; /* Hintergrundfarbe der Zellen */
+        }
+          h1 {
+            text-align: center;
+            width: 100%;
+            padding: 20px; /* Fügt etwas Platz um den Text hinzu */
+            height: 4cm; /* Setzt eine feste Höhe für die Überschrift */
+            line-height: 4cm; /* Zentriert den Text vertikal */
+            background-image: url('images/bilder_index/legohg.jpg');
+            background-repeat: repeat;
+        }
+
+        .gekachelter-hintergrund-zelle {
+            background-image: url('images/bilder_index/legohg.jpg');
+            background-repeat: repeat;
+        }
+        .überschrift-zelle {
+            text-align: center; /* Zentriert den Text horizontal */
+            font-size: 24px; /* Größere Schriftgröße */
+            margin-top: 0; /* Entfernt oberen Abstand, falls gewünscht */
+            margin-bottom: 0; /* Entfernt unteren Abstand, falls gewünscht */
+        }
+        /* Responsivität hinzufügen */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Eine Spalte */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* Eine Spalte */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Beleuchtung im Buchladen</h1>
+    <div class="container">
+        <!-- Erste Zeile -->
+        <div class="cell">
+            <!-- 1.1-->
+             <img src="images/bilder_buchladen/buchladen2.jpg" alt="Buchladen rechter Teil" style="display: block; margin-left: auto; margin-right: auto;"> <br>
+        </div>
+        <div class="cell">
+            <!-- 1.2 -->
+            <b>Beleuchtung im Buchladen, zunächst mal rechtes Haus.</b><br><br>
+            Straßenlaterne <br>
+            Zwei Außenlaternen neben der Haustür <br><br>
+            Innen:<br><br>
+            Kaminfeuer <br>
+            Fensternische<br>
+            Nachttischlampe im Schlafzimmer<br><br><br>
+            Hier kann man sehr gut sehen, wie gut sich die SMD-LEDs mit den vorab angelöteten Kupferlackdrähten für das Bauen eignen.<br>
+            Bei fast allen Lampen konnte man die Drähte in vorhandene Ritzen klemmen. Lego Plättchen oder Bausteine drüber - fast unsichtbar.<br> Manchmal bleiben die dünnen Drähte vor den Wänden liegen, da ich das Anbohren der Steine meist vermieden habe.
+        </div>
+        <div class="cell gekachelter-hintergrund-zelle">
+             <!-- 1.3 -->
+             <a href="http://norbisrath.de/beleuchtung.html">Beleuchtung mit LEDs </a><br>
+            Beleuchtung mit LED-Strips <br>
+            <a href="http://norbisrath.de/automation.html">Automatisierung </a><br>
+        </div>
+
+<!-- Zweite Zeile -->
+        <div class="cell">
+            <!-- 2.1 -->
+            <img src="images/bilder_buchladen/kontakte kupferfolie.jpg" alt="kontakte kupferfolie" style="display: block; margin-left: auto; margin-right: auto;"> <br> Untere Verbindungen mit der passenden nächsten Etage.
+        </div>
+        <div class="cell">
+            <!-- 2.2 -->
+            <b>Kupferfolie</b> (Rollenware, 5,7mm) löst das Problem des Übergangs zwischen den einzelnen Etagen des Lego Bauwerks. Unten zwei Streifen Folie anbringen, Drähte anlöten und weiter verbinden. Gegenseite so anpassen, dass die Folien gut übereinander sitzen. Hier alle ankommenden Drähte anlöten. Polarität beachten!<br> Falls man mehr als einen Stromkreis haben möchte, kann man mehr als zwei Kupferfolien verwenden. An den (-)-Pol (GND) kann man die Kathoden aller LEDs anschließen.
+        </div>
+        <div class="cell">
+            <!-- 2.3 -->
+            <img src="images/bilder_buchladen/keller.jpg" alt="esp im keller" style="display: block; margin-left: auto; margin-right: auto;"> <br>
+            Die Verbindungen über die Kupferfolie können über mehrere Etagen laufen. Ganz unten im Keller verbinden wir dann mit dem Microcontroller.<br> Hier habe ich die Straßenlaterne an D1 angeschlossen, die restlichen LEDs an D2.
+        </div>
+
+<!-- Dritte Zeile -->
+
+        <div class="cell">
+            <!-- 3.1 -->
+            Gemütlich im Schlafzimmer<br><br>
+            Bei der Lampe waren zwei kleine Bohrlöcher erforderlich. Aber jetzt sieht man auch wirklich gar nichts mehr von der Verdrahtung.<br><br><br>
+            <img src="images/bilder_buchladen/lampen innen.jpg" alt="lampen innen" style="display: block; margin-left: auto; margin-right: auto;"> <br><br>
+            Unten: die Tischbeleuchtung und das Kaminfeuer
+        </div>
+         <div class="cell gekachelter-hintergrund-zelle">
+            <!-- 3.2-->
+        </div>
+        <div class="cell">
+            <!-- 3.3 -->
+             <img src="images/bilder_buchladen/buchladen2 beleuchtet.jpg" alt="Buchladen rechter Teil beleuchtet" style="display: block; margin-left: auto; margin-right: auto;"> <br>
+        </div>
+
+    </div>
+</body>
+</html>
