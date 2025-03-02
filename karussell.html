@@ -18,7 +18,7 @@
             width: 100%;
         }
            .gekachelter-hintergrund-zelle {
-            background-image: url('images/legohg.jpg');
+            background-image: url('images/bilder_index/legohg.jpg');
             background-repeat: repeat;
         }
         .überschrift-zelle {
@@ -45,36 +45,112 @@
     <h1>Karussell</h1>
     <div class="container">
         <!-- Erste Zeile -->
-        <div class="cell">
+        <div class="cell gekachelter-hintergrund-zelle">
             <!-- 1.1-->
+
         </div>
         <div class="cell">
             <!-- 1.2 -->
+            Das Karussell bedeutet schon eine etwas größere Herausforderung: <br>
+            - motorischer Antrieb, 9V, gesteuert über ESP 8266 und Motorshield <br>
+            - drehbares Oberteil, elektrische Verbindungen vom statischen Unterteil auf den drehbaren Teil<br>
+            - in den drehbaren Teilen LED-Kränze und LED-Strips <br>
+            - Programmieren der Abläufe: Ruhe, Start, Stopp <br>
+            - dazu akkustische Untermalung<br>
+
         </div>
-        <div class="cell">
+
+        <div class="cell gekachelter-hintergrund-zelle">
             <!-- 1.3 -->
+            <img src="images/bilder_karussell/karussell.jpg" alt="Karussell stehend" style="display: block; margin-left: auto; margin-right: auto;">
         </div>
 
 <!-- Zweite Zeile -->
         <div class="cell">
             <!-- 2.1 -->
+             <img src="images/bilder_karussell/fuss_innen.jpg" alt="Steuerung im Fuß" style="display: block; margin-left: auto; margin-right: auto;"> <br>
         </div>
         <div class="cell">
             <!-- 2.2 -->
+            <!-- Pfeil nach links-->
+            <div style="text-align: left;">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                    <path d="M10 19l-7-7 7-7v4h11v6H10v4z" fill="lime"/>
+                </svg>
+            </div>
+
+            <b><b>Fußteil des Karussells mit Steuerung</b> <br>
+            <br>
+            unten: <br>
+            Kabel: Spannung 5V, 9V, GND (weiß)<br>
+            dahinter Stromverteilung (grün)<br>
+            Bildmitte: <br>
+            Motorshield (rot) -- -- ESP8266 (blau)<br>
+            darüber gehts dann weiter nach oben zu den Schleifringen (gelb)<br></b>
+            <!-- Pfeil nach links  ****  und rechts -->
+             <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                <path d="M10 19l-7-7 7-7v4h11v6H10v4z" fill="lime"/>
+                </svg>
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                <path d="M14 5l7 7-7 7v-4H3v-6h11V5z" fill="orange"/>
+                </svg>
+            </div>
+
+            <table style="width: 100%;">
+            <tr>
+                </td>
+                <td style="width: 50%; text-align: right; vertical-align: middle;">
+                <b><b>Hier sieht man den beweglichen Teil des Karussels von unten</b><br>
+                Die feine Kupferdrähte (rot und blau)<br> führen jeweils zu den Kupferfolien <br>
+                und sind dort angelötet. <br>
+                Die kleinen SMD-LEDs klemmen unter den <br>transparenten gelben Lego Plättchen.
+                </td>
+            </tr>
+           </table>
+            <!-- Pfeil nach rechts -->
+           <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                <path d="M14 5l7 7-7 7v-4H3v-6h11V5z" fill="orange"/>
+                </svg>
+           </div>
         </div>
+
         <div class="cell">
             <!-- 2.3 -->
+             <img src="images/bilder_karussell/bew_unten.jpg" alt="bewegliches Teil von unten" style="display: block; margin-left: auto; margin-right: auto;"> <br>
         </div>
 
 <!-- Dritte Zeile -->
         <div class="cell">
             <!-- 3.1 -->
+             <img src="images/bilder_karussell/bew_oben.jpg" alt="Anschlüsse oben" style="display: block; margin-left: auto; margin-right: auto;"> <br>
         </div>
         <div class="cell">
             <!-- 3.2 -->
+            <!-- Pfeil nach links-->
+            <div style="text-align: left;">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                    <path d="M10 19l-7-7 7-7v4h11v6H10v4z" fill="lime"/>
+                </svg>
+            </div>
+            <b>Im oberen Teil des Karussells ist ziemlich viel zu verdrahten.</b><br>
+             Von unten in der Mitte (natürlich in der Drehachse) kommen die Kabel aus dem beweglichen Teil des Schleifringmoduls. (Blaue Markierung) <br><br>
+             Bei mir sind das: (mit passenden Farbmarkierungen)<br>
+             schwarz - GND <br>
+             rot - Spannung 5V (für rgb-Strip)<br>
+             grün - Datenleitung rgb-Strip <br>
+             gelb - Spannung 3,3 V für die LEDs <br>
+             <br>
+             Kleine Besonderheit: alle Anschlusskabel sind auch noch "Lego"-steckbar
+
         </div>
-        <div class="cell">
+        <div style="width: 100%; max-width: 640px; margin: auto;">
             <!-- 3.3 -->
+           <video width="100%" controls autoplay loop muted>
+            <source src="images/bilder_karussell/karussell.mp4" type="video/mp4">
+            Dein Browser unterstützt kein HTML5-Video.
+            </video>
         </div>
 
     </div>
